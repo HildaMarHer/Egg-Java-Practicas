@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Hilda MarHer
  */
 public class Ejercicio11_Guia7 {
-/*
+
     public static void main(String[] args) {
          
         Scanner input = new Scanner(System.in);
@@ -60,7 +60,8 @@ public class Ejercicio11_Guia7 {
         //El método toString() en Java, como su propio nombre indica, se utiliza para convertir a String (es decir, a una cadena de texto) cualquier objeto Java.
     }
 }
-*/
+
+   /* 
     public static void main(String[] args) {
         // Definir tabla de codificación
         String[][] codificacion = {
@@ -100,3 +101,4 @@ public class Ejercicio11_Guia7 {
         System.out.println("Secuencia codificada: " + codificada);
     }
 }
+*/
