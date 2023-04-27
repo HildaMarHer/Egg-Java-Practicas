@@ -35,27 +35,11 @@ public class POOEj3 {
         int resultadoSuma = operacion.sumar();
         System.out.println("El resultado de la suma es: " + resultadoSuma);
 
-        int resultadoResta = operacion.restar();
-        System.out.println("El resultado de la resta es: " + resultadoResta);
-
-        int resultadoMultiplicacion = operacion.multiplicar();
-        System.out.println("El resultado de la multiplicación es: " + resultadoMultiplicacion);
-
-        double resultadoDivision = operacion.dividir();
-        System.out.println("El resultado de la división es: " + resultadoDivision);
-
 //Usando el  @Override solo se llaman las clases
 
-        operacion.sumar();
-        System.out.println("Suma= " + operacion.sumar());
-
-        operacion.restar();
+        System.out.println("Suma= " + operacion.sumar()) ;
         System.out.println("Restar= " + operacion.restar());
-
-        operacion.multiplicar();
         System.out.println("Multiplicación= " + operacion.multiplicar());
-
-        operacion.dividir();
         System.out.println("División= " + operacion.dividir());
 
     }

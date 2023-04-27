@@ -24,7 +24,6 @@ import java.util.Scanner;
  * @GitHub https://github.com/HildaMarHer
  *
  */
-
 public class Operacion {
 
     private int numero1;
@@ -41,6 +40,7 @@ public class Operacion {
     }
 
     //c) Métodos get y set.
+    // set establece - get obtiene 
     public int getNumero1() {
         return numero1;
     }
@@ -85,7 +85,6 @@ public class Operacion {
     public int multiplicar() {
         if (numero1 == 0 || numero2 == 0) {
             System.out.println("Error: no se puede multiplicar por 0");
-            return 0;
         }
         return numero1 * numero2;
 
@@ -97,7 +96,7 @@ informa al usuario. Si no, se hace la división y se devuelve el resultado al ma
     public double dividir() {
         if (numero2 == 0) {
             System.out.println("Error: no se puede dividir por 0");
-            return 0;
+         return 0; 
         }
         return numero1 / numero2;
 
