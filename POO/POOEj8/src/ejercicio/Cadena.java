@@ -58,7 +58,7 @@ public class Cadena{
 
 
     public int vecesRepetido(char letra){
-            int contador = 0;
+        int contador = 0;
         for (int i = 0; i < this.frase.length(); i++) {
             if (this.frase.charAt(i) == letra){
                 contador++;
@@ -68,11 +68,11 @@ public class Cadena{
     }
 
     public int comprarLongitud(String otraFrase){
-            return Integer.compare(this.longitud, otraFrase.length());
+        return Integer.compare(this.longitud, otraFrase.length());
     }
 
     public String unirFrase(String nuevaFrase){
-            return this.frase + " " + nuevaFrase;
+        return this.frase + " " + nuevaFrase;
     }
 
     public String reemplazar(char letra) {
@@ -80,12 +80,10 @@ public class Cadena{
     }
 
     public boolean contiene(char letra){
-            return this.frase.indexOf(letra) != -1;
+        return this.frase.indexOf(letra) != -1;
     }
 
     public String unirFrases(String otraFrase) {
         return this.frase + " " + otraFrase;
     }
-
 }
-
