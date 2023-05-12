@@ -23,7 +23,9 @@ h) Método contiene(String letra), deberá comprobar si la frase contiene una le
 ingresa el usuario y devuelve verdadero si la contiene y falso si no.
  */
 package ejercicio;
-
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 public class Cadena{
     private String frase;
     private int longitud;
@@ -39,9 +41,12 @@ public class Cadena{
     }
     public int mostrarVocales() {
         int contador = 0;
+        Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U',
+                'á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú', '\u00E4', '\u00EB', '\u00EF', '\u00F6', '\u00FC',
+                '\u00C4', '\u00CB', '\u00CF', '\u00D6', '\u00DC'));
         for (int i = 0; i < this.frase.length(); i++) {
             char c = this.frase.charAt(i);
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            if (vowels.contains(c)) {
                 contador++;
             }
         }
@@ -50,7 +55,7 @@ public class Cadena{
 
     public String invertirFrase() {
         String fraseInvertida = "";
-        for (int i = this.frase.length() - 1; i >= 0; i--) {
+        for (int i = this.frase.length() -1; i >= 0; i--) {
             fraseInvertida += this.frase.charAt(i);
         }
         return fraseInvertida;
@@ -67,7 +72,7 @@ public class Cadena{
         return contador;
     }
 
-    public int comprarLongitud(String otraFrase){
+    public int compararLongitud(String otraFrase){
         return Integer.compare(this.longitud, otraFrase.length());
     }
 

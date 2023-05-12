@@ -8,18 +8,12 @@
 
 import Mate.Matematicas;
 import Operacion.Operaciones;
-
-import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Matematicas matematicas = new Matematicas ();
-        Scanner nu1 = new Scanner(System.in);
-        Scanner nu2 = new Scanner(System.in);
-        System.out.print("Ingrese el primer número: ");
-        double num1 = nu1.nextDouble();
-        System.out.print("Ingrese el segundo número: ");
-        double num2 = nu2.nextDouble();
-
+        double num1 = Math.random();
+        double num2 = Math.random();
+        System.out.println("num1= " + num1 + "\nnum2= " + num2);
         matematicas.setNum1(num1);
         matematicas.setNum2(num2);
         Operaciones operaciones = new Operaciones(matematicas);

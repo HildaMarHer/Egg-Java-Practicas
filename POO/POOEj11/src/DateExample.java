@@ -32,16 +32,13 @@ public class DateExample {
                 System.out.println("El número ingresado no es válido. Favor de ingresar un mes válido");
             }
         } while (mes < 1 || mes > 12);
-
         System.out.print("Ingrese el año: ");
         int anio = scanner.nextInt();
 
         Date fecha = new Date(anio - 1900, mes - 1, dia);
         Date fechaActual = new Date();
-
         System.out.println("La fecha ingresada es: " + fecha);
         System.out.println("Han transcurrido " + ((fechaActual.getTime() - fecha.getTime()) / 31536000000L) + " años desde la fecha ingresada hasta la fecha actual.");
-
         scanner.close();
     }
 }
