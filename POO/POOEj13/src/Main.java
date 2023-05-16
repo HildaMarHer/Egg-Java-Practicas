@@ -26,9 +26,29 @@ se repite el encuentro.
  * POOEj13
  * Hilda MarHer, Date: 12/5/2023
  */
+import School.Curso;
+import Servicios.ServiciosCurso;
 
 public class Main {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
+        // Crear un nuevo curso
+        Curso curso = ServiciosCurso.crearCurso();
 
+        // Mostrar información del curso
+        System.out.println("Curso creado:");
+        System.out.println("Nombre del curso: " + curso.getNombreCurso());
+        System.out.println("Cantidad de horas por día: " + curso.getCantidadHorasPorDia());
+        System.out.println("Cantidad de días por semana: " + curso.getCantidadDiasPorSemana());
+        System.out.println("Turno: " + curso.getTurno());
+        System.out.println("Precio por hora: " + curso.getPrecioPorHora());
+        System.out.println("Alumnos:");
+        String[] alumnos = curso.getAlumnos();
+        for (int i = 0; i < alumnos.length; i++) {
+            System.out.println("- " + alumnos[i]);
+        }
+
+        // Calcular la ganancia semanal del curso
+        double gananciaSemanal = ServiciosCurso.calcularGananciaSemanal(curso);
+        System.out.println("Ganancia semanal del curso: " + gananciaSemanal);
     }
 }

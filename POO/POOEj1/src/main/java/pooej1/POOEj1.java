@@ -14,7 +14,7 @@ public class POOEj1 {
 
     public static void main(String[] args) {
      
-     Scanner datos = new Scanner(System.in);   
+    Scanner datos = new Scanner(System.in);
     Libro Libro1 = new Libro(); 
     // Libro Libro2 = new Libro(123456, "El principito", "Antoine Exuspery",96 );
     // System.out.println(Libro1.ISBN);
